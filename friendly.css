@@ -294,7 +294,8 @@ form#delegationForm {
 input.voting_done,
 form.login input[type="submit"],
 form.vertical input[type="submit"],
-.initiative_head .content form[action="../../initiative/add_support"] + script + a {
+.initiative_head .content form[action="../../initiative/add_support"] + script + a,
+.initiative_head a[href^="../../suggestion/new"] {
   text-decoration: none !important;
   box-shadow: rgba(255, 255, 255, .5) -1px 5px 6px inset, rgba(0, 0, 0, .3) 1px 1px 2px, rgba(0, 0, 0, .2) 1px -1px 1px inset;
   border-radius: 1em !important;
@@ -310,7 +311,8 @@ form.vertical input[type="submit"],
 input.voting_done:hover,
 form.login input[type="submit"]:hover,
 form.vertical input[type="submit"]:hover,
-.initiative_head .content form[action="../../initiative/add_support"] + script + a:hover { 
+.initiative_head .content form[action="../../initiative/add_support"] + script + a:hover,
+.initiative_head a[href^="../../suggestion/new"]:hover { 
   box-shadow: none !important;
 }
 
@@ -335,7 +337,8 @@ form.vertical input[type="submit"] + input[type="submit"] {
 }
 
 .actions a[href^="../../initiative/new"],
-.slot_default .issue:hover .actions a[href^="../../initiative/new"] {
+.slot_default .issue:hover .actions a[href^="../../initiative/new"],
+.initiative_head a[href^="../../suggestion/new"] {
   background: #f90 !important;
 }
 
