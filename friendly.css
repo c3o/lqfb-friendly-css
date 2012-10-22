@@ -294,7 +294,7 @@ form#delegationForm {
 .unit_head .content a,
 .area_head .content a,
 .actions a,
-input.voting_done,
+#voting_form input[type="submit"],
 form.login input[type="submit"],
 form.vertical input[type="submit"],
 .initiative_head .content form[action="../../initiative/add_support"] + script + a,
@@ -312,7 +312,7 @@ form.vertical input[type="submit"],
 .unit_head .content a:hover,
 .area_head .content a:hover,
 .actions a:hover,
-input.voting_done:hover,
+#voting_form input[type="submit"]:hover,
 form.login input[type="submit"]:hover,
 form.vertical input[type="submit"]:hover,
 .initiative_head .content form[action="../../initiative/add_support"] + script + a:hover,
@@ -331,7 +331,8 @@ form.vertical input[type="submit"]:hover,
 .area:hover .area_head .content a[href^="../initiative/new"],
 .area:hover .area_head .content a[href^="../../initiative/new"],
 form.vertical input[type="submit"] + input[type="submit"],
-.draft_updated_info form + script + a {
+.draft_updated_info form + script + a,
+#voting_form input.voting_done1, #voting_form input.voting_done2 {
   background: #090 !important;
   color: #fff !important;
 }
@@ -671,7 +672,9 @@ form.vertical input[type="submit"] + input[type="submit"],
   background: #fff !important;
   box-shadow: rgba(0,0,0,.8) 1px 1px 6px;
 }
-input.voting_done {
+input.voting_done,
+input.voting_done1,
+input.voting_done2 {
   font-size: 1.3em !important;
   padding: .5em 1em !important;
   border: 0 !important;
